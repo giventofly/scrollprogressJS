@@ -1,0 +1,30 @@
+    document.addEventListener("DOMContentLoaded", function (event) {
+    
+      //first draft
+      
+      const progressJSsettings = {
+        "color": "red",
+        "height": "3px",
+
+      }
+
+      const progressJS = document.createElement("div");
+      progressJS.setAttribute('id','progressbarJS');
+      document.body.appendChild(progressJS);
+      progressJS.style.position = 'fixed';
+      progressJS.style.top = '0';
+      progressJS.style.left = '0';
+      progressJS.style.height = "5px";
+      progressJS.style.backgroundColor = 'red';
+      progressJS.style.width = '100%';
+      progressJS.style.zIndex = '99999';
+
+      document.addEventListener('scroll', function(e){
+        const maxHeight = document.body.scrollHeight;
+        const sizeHeight = document.documentElement.clientHeight;
+        const scrolls = window.scrollY;
+        const percentage = (scrolls / (maxHeight - sizeHeight)) * 100 ;
+        progressJS.style.width = percentage + "%";
+        console.log(percentage);
+      });
+    });
