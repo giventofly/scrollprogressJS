@@ -62,6 +62,6 @@ Just pass the parameters on "boot", example:
 
 ___
 
-*This probably has a lot of room to improve, feel free to do what you want with it.*
+*This probably has a lot of room to improve, feel free to do what you want with it. You don't need to credit, but it would be awesome to me :'D*
 
 
